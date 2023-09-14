@@ -1,8 +1,8 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { Paper } from "@mui/material";
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Paper } from '@mui/material';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 function Login({ setUsername, setPassword, userLogin }) {
   const navigate = useNavigate();
@@ -11,13 +11,13 @@ function Login({ setUsername, setPassword, userLogin }) {
       <div>
         <form>
           <Paper
-            sx={{ width: { xs: 350, sm: 550 }, padding: "1rem 0 1rem 0" }}
+            sx={{ width: { xs: 350, sm: 550 }, padding: '1rem 0 1rem 0' }}
             elevation={6}
             className="d-flex flex-column gap-4 my-5 h-100 mx-auto"
           >
             <span className="fs-1 fw-bolder fst-bold scale-1">
-              {" "}
-              Welcome to CRM App{" "}
+              {' '}
+              Welcome to CRM{' '}
             </span>
             <span className="fs-2">Login Details</span>
             <span>
@@ -42,17 +42,17 @@ function Login({ setUsername, setPassword, userLogin }) {
               </Button>
               <Button
                 variant="contained"
-                onClick={() => navigate("/forgotpassword")}
+                onClick={() => navigate('/forgotpassword')}
               >
                 Forgot Password ?
               </Button>
             </span>
             <div>
-              {" "}
+              {' '}
               New to CRM, click here 👉🏼
               <Button
                 onClick={() => {
-                  navigate("/register");
+                  navigate('/register');
                 }}
               >
                 Register
@@ -71,7 +71,8 @@ function UserCredentials() {
     <div className="user-credentials">
       <span>
         <span>
-          For Admin , use Username : <b>sathiya</b> and password as <b>123456</b>
+          For Admin , use Username : <b>sathiya</b> and password as{' '}
+          <b>123456</b>
         </span>
         <br />
         <span>
